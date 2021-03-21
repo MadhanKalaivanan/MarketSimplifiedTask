@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="repo_list_row_card_height">112dp</dimen>
+    <dimen name="repo_list_row_card_margin_left_right">10dp</dimen>
+    <dimen name="repo_list_row_card_margin_top_bottom">5dp</dimen>
+    <dimen name="repo_list_row_card_radius">10dp</dimen>
+    <dimen name="repo_list_row_card_elevation">5dp</dimen>
+    <dimen name="repo_list_row_name_margin_left">15dp</dimen>
+    <dimen name="repo_list_row_name_margin_top">10dp</dimen>
+    <dimen name="repo_list_row_name_size">12sp</dimen>
+    <dimen name="repo_list_row_desc_margin_top">8dp</dimen>
+    <dimen name="repo_list_row_desc_txt_size">10sp</dimen>
+    <dimen name="repo_list_row_command_margin_bottom">8dp</dimen>
+    <dimen name="repo_list_row_command_txt_size">10sp</dimen>
+
+</resources>

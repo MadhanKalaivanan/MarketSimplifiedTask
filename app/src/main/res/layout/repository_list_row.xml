@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/repo_list_row_card_height"
+        android:layout_marginLeft="@dimen/repo_list_row_card_margin_left_right"
+        android:layout_marginTop="@dimen/repo_list_row_card_margin_top_bottom"
+        android:layout_marginRight="@dimen/repo_list_row_card_margin_left_right"
+        android:layout_marginBottom="@dimen/repo_list_row_card_margin_top_bottom"
+        app:cardCornerRadius="@dimen/repo_list_row_card_radius"
+        app:cardElevation="@dimen/repo_list_row_card_elevation"
+        app:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/repo_list_row_card_height"
+                android:layout_height="match_parent"
+                tools:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/repo_list_row_name_margin_left"
+                android:layout_marginTop="@dimen/repo_list_row_name_margin_top"
+                android:layout_toEndOf="@id/image"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/repo_list_row_name_size"
+                android:textStyle="bold"
+                tools:text="Madhan" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/command"
+                android:layout_below="@id/name"
+                android:layout_alignStart="@id/name"
+                android:layout_marginTop="@dimen/repo_list_row_desc_margin_top"
+                android:maxLines="2"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/repo_list_row_desc_txt_size"
+                tools:text="Repository description
+" />
+
+            <EditText
+                android:id="@+id/command"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignStart="@id/name"
+                android:layout_alignBottom="@id/image"
+                android:layout_marginTop="@dimen/repo_list_row_desc_margin_top"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="@dimen/repo_list_row_command_margin_bottom"
+                android:background="@drawable/edit_text_bg"
+                android:hint="@string/add_command"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/repo_list_row_command_txt_size" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
